@@ -2,23 +2,11 @@
   Title: <%= f.text_field :title %>
   
   <%= f.fields_for :ingredients do |ingr| %>
-    <%= ingr.label :street_address_1 %>
-    <%= ingr.text_field :street_address_1 %><br>
+    <%= ingr.label :name %>
+    <%= ingr.text_field :name %><br>
  
-    <%= addr.label :street_address_2 %>
-    <%= addr.text_field :street_address_2 %><br>
- 
-    <%= addr.label :city %>
-    <%= addr.text_field :city %><br>
- 
-    <%= addr.label :state %>
-    <%= addr.text_field :state %><br>
- 
-    <%= addr.label :zipcode %>
-    <%= addr.text_field :zipcode %><br>
- 
-    <%= addr.label :address_type %>
-    <%= addr.text_field :address_type %><br>
+    <%= ingr.label :quantity %>
+    <%= ingr.text_field :quantity %><br>
   <% end %>
  
   <%= f.submit %>
