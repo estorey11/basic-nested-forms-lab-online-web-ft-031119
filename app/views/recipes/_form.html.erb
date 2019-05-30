@@ -2,11 +2,11 @@
   Title: <%= f.text_field :title %>
   
   <%= f.fields_for :ingredients do |ingredient| %>
-    <%= ingr.label :name %>
-    <%= ingr.text_field :name %><br>
+    <%= ingredient.label :name %>
+    <%= ingredient.text_field :name %><br>
  
-    <%= ingr.label :quantity %>
-    <%= ingr.text_field :quantity %><br>
+    <%= ingredient.label :quantity %>
+    <%= ingredient.text_field :quantity %><br>
   <% end %>
  
   <%= f.submit %>
